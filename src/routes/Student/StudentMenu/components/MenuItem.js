@@ -23,21 +23,21 @@ export const MenuItem = (props) => (
         </div>
         <div className="col-md-2">
             <div className="menu-item">
-                <Link to={props.location.pathname + Sight.pathWithoutParam}>
-                    <div className="icons-box">
-                        <i className="fas fa-pen fa-3x" aria-hidden="true" />
-                    </div>
-                    <HeaderDefault type="h4" texto="Parecer" />
-                </Link>
-            </div>
-        </div>
-        <div className="col-md-2">
-            <div className="menu-item">
                 <Link to={props.location.pathname + StudentAttendance.pathWithoutParam}>
                     <div className="icons-box">
                         <i className="far fa-id-card fa-3x" aria-hidden="true" />
                     </div>
                     <HeaderDefault type="h4" texto="Atendimento" />
+                </Link>
+            </div>
+        </div>
+        <div className="col-md-2">
+            <div className="menu-item">
+                <Link to={props.location.pathname + Sight.pathWithoutParam}>
+                    <div className="icons-box">
+                        <i className="fas fa-pen fa-3x" aria-hidden="true" />
+                    </div>
+                    <HeaderDefault type="h4" texto="Parecer" />
                 </Link>
             </div>
         </div>

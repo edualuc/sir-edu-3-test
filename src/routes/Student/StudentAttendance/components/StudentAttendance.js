@@ -67,10 +67,10 @@ export default class StudentAttendance extends React.Component {
 
   componentDidMount() {
     //   const { getStudent, students } = this.props
-    const { getFiles, getJudgements, routeParams } = this.props;
+    //const { getFiles, getJudgements, routeParams } = this.props;
 
-    getFiles(routeParams.id);
-    getJudgements(routeParams.id);
+    //getFiles(routeParams.id);
+    //getJudgements(routeParams.id);
     //   if (!students.student.name && ( 
     //     this.props.params.modo === 'editar' || this.props.params.modo === 'excluir')) { 
     //     getStudent(this.props.params.id)

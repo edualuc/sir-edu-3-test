@@ -125,17 +125,17 @@ export default class RegisterForm extends React.Component {
     // }
 
     render() {
-        files
-        judgements
-        adaptations
+        var timelineList = [];
         if (!this.register.title) {
             this.register = { ...this.register, ...this.props.student }
         }
 
+// <LoadingSpinner loading={ //files.isFetching || 
+// judgements.isFetching || adaptations.isFetching
+// } />
         return (
             <form onSubmit={this.handleSubmit}>
-            <LoadingSpinner loading={files.isFetching || 
-                judgements.isFetching || adaptations.isFetching} />
+            
                 {this.props.step === 0 &&
                     <div className="row">
                         <div className="col-md-8">

@@ -13,7 +13,7 @@ export default class StudentHeader extends React.Component {
         const { student } = this.props;
         return (
             <nav className="container-fluid navbar navbar-default student-header">
-                <div className="col-md-1">
+                <div className="col-md-2">
                     {
                     student.avatar 
                     ? <img className="thumbnail avatar" src={'/' + student.avatar.path} /> 
@@ -32,7 +32,7 @@ export default class StudentHeader extends React.Component {
                     <TextField floatingLabelText="Turma:" value={student.classNumber || ' '} underlineShow={false} />
                     <Divider />
                 </div>
-                <div className="col-md-2">
+                <div className="col-md-1">
                     <TextField floatingLabelText="Matrícula:" value={student.registration || ' '} underlineShow={false} />
                     <Divider />
                 </div>                             

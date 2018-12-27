@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router'
 import { TableRowColumn } from 'material-ui/Table'
+import { logo } from '../constants/configConstants';
 
 export const getFiltered = (registerForFilter, filterText) => {
     if (registerForFilter && registerForFilter.constructor === Array) {
@@ -21,6 +22,7 @@ export function makeColumn(column, elementContent, link, style = {}) {
     var elemento
     makeColumnKey++
     if (column.content) {
+        console.log(elementContent);
         elemento = column.content(elementContent)
     }
     if (column.link) {

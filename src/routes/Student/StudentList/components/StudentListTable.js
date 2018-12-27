@@ -32,7 +32,7 @@ export default class StudentListTable extends React.Component {
       {
         name: 'Foto',
 //        style: {width: 100},
-        content: (avatar) => { return <Avatar src={avatar} className="student-avatar pull-left" size={45} /> }
+        content: (avatar) => { return <Avatar src={avatar} className="student-avatar pull-left" size={40} /> }
       },
       {
         name: 'Nome',

@@ -23,11 +23,9 @@ export default class StudentPlan extends React.Component {
 
     this.tabs = [
       {name: 'Geral'},
-      {name: 'Habil cognitivas'},
-      {name: 'Habil sociais'},
-      {name: 'Habil '},
+      {name: 'Habilidades'},
       {name: 'Proposições'}
-    ]
+    ] 
 
     this.data = {
       tabs: this.tabs,

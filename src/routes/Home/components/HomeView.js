@@ -5,9 +5,9 @@ import './HomeView.scss'
 export const HomeView = () => (
   <div className="sir-home text-center">
     <img
-      className='logo'
+      className="logo"
       src={logo} />
-      <h4 className="title">Sistema Integrado de Recursos - Educacional</h4>
+      <h4 className="title">Sistema de Gestão e Acompanhamento Educacional</h4>
   </div>
 )
 

@@ -184,17 +184,16 @@ export default class RegisterForm extends React.Component {
                         </div><div className="col-md-6">
                             <TextFieldDefault fullWidth multiLine value={this.register.extraClassActivity || ''} name="extraClassActivity" floatingLabelText="Atividades Extra-Classe" onChange={(evt, value) => { this.handleChange(evt, 'extraClassActivity', value) }} />
                         </div><div className="col-md-6">
-                            <TextFieldDefault fullWidth multiLine value={this.register.AEE || ''} name="AEE" floatingLabelText="AEE **" onChange={(evt, value) => { this.handleChange(evt, 'aee', value) }} />
+                            <TextFieldDefault fullWidth multiLine value={this.register.AEE || ''} name="AEE" floatingLabelText="AEE" onChange={(evt, value) => { this.handleChange(evt, 'aee', value) }} />
                         </div><div className="col-md-6">
                             <TextFieldDefault fullWidth multiLine rows={2} value={this.register.otherInformation || ''} name="otherInformation" floatingLabelText="Outras informação" onChange={(evt, value) => { this.handleChange(evt, 'otherInformation', value) }} />
                         </div>
-                    </div>
-                
-                    <div className="row">
-                        <HeaderDefault texto="Histórico" type="h3" />
-                        <div className="col-md-4">
+                        <div className="col-md-12">
+                            <HeaderDefault texto="Histórico" type="h3" />
+                        </div>
+                        <div className="col-md-6">
                             <TextFieldDefault fullWidth value={this.register.forwardingCode || ''} name="forwardingCode" floatingLabelText="Código no Encaminhamento AEE" onChange={(evt, value) => { this.handleChange(evt, 'forwardingCode', value) }} />
-                        </div><div className="col-md-4">
+                        </div><div className="col-md-6">
                             <TextFieldDefault fullWidth value={this.register.forwardingDate || ''} name="forwardingDate" floatingLabelText="Data do encaminhamento" onChange={(evt, value) => { this.handleChange(evt, 'forwardingDate', value) }} />
                         </div><div className="col-md-6">
                             <TextFieldDefault fullWidth multiLine rows={2} value={this.register.forwardingReason || ''} name="forwardingReason" floatingLabelText="Motivo do encaminhamento" onChange={(evt, value) => { this.handleChange(evt, 'forwardingReason', value) }} />
@@ -204,16 +203,16 @@ export default class RegisterForm extends React.Component {
                             <TextFieldDefault fullWidth multiLine rows={2} value={this.register.historical || ''} name="historical" floatingLabelText="Histórico Escolar" onChange={(evt, value) => { this.handleChange(evt, 'historical', value) }} />
                         </div><div className="col-md-6">
                             <TextFieldDefault fullWidth multiLine rows={2} value={this.register.attendance || ''} name="attendance" floatingLabelText="Atendimento (especializado)*" onChange={(evt, value) => { this.handleChange(evt, 'attendance', value) }} />
-                        </div><div className="col-md-6">
-                            <TextFieldDefault fullWidth multiLine rows={2} value={this.register.NEES || ''} name="NEES" floatingLabelText="NEES *" onChange={(evt, value) => { this.handleChange(evt, 'NEES', value) }} />
+                        {/* </div><div className="col-md-6">
+                            <TextFieldDefault fullWidth multiLine rows={2} value={this.register.NEES || ''} name="NEES" floatingLabelText="NEES *" onChange={(evt, value) => { this.handleChange(evt, 'NEES', value) }} /> */}
                         </div>
                     </div>
                 }
-                {(this.props.step === 1 || this.props.step === 2 || this.props.step === 3) &&
+                {(this.props.step === 1) &&
                     this.developeStatusTransposed.map(rowDiv => {
                         return <div className="row">
                         <div className="col-md-12">
-                        <HeaderDefault texto={developeStatus.title} type="h3" />
+                        {/* <HeaderDefault texto={developeStatus.title} type="h3" /> */}
                             <div className="row">
                                 {
                                     rowDiv.map((columnDiv) => {
@@ -227,7 +226,7 @@ export default class RegisterForm extends React.Component {
                     </div>
                     })
                 }
-                {this.props.step === 4 &&
+                {this.props.step === 2 &&
                     <div className="row">
                         <HeaderDefault texto="Plano de Intervenção Pedagógica" type="h3" />
                         <div className="col-md-12">
