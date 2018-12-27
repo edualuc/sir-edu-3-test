@@ -9,4 +9,7 @@ export default class RouterHelper {
     static goToStudentMenuPage(studentId) {
         browserHistory.push('/aluno/' + studentId);
     }
+    static goToLoginPage() {
+        browserHistory.push('/login');
+    }
 }
