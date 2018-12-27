@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from 'public/sir-edu_logo.png'
+import logo from 'public/SIGAEDU.png'
 import './HomeView.scss'
 
 export const HomeView = () => (
@@ -7,7 +7,7 @@ export const HomeView = () => (
     <img
       className="logo"
       src={logo} />
-      <h4 className="title">Sistema de Gestão e Acompanhamento Educacional</h4>
+      <h4 className="title">SiG@Edu - Sistema de Gestão e Acompanhamento Educacional</h4>
   </div>
 )
 
