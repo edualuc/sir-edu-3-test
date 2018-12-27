@@ -1,4 +1,4 @@
-//import router from 'helpers/router-helper'
+import router from 'helpers/router-helper'
 import userService from 'services/users-service'
 
 // ------------------------------------
@@ -59,15 +59,18 @@ function closemodal() {
 // TODO Controlar duplicação de emails.
 // TODO Controlar Campos obrigatórios
 export function insertUser(user) {
-    return dispatch => {
-        dispatch(request(REGISTER_USER_REQUEST));
-        return userService.register(user)
-            .then((data) => {
-                dispatch(success(REGISTER_USER_SUCCESS));
-            }).catch((error) => {
-                dispatch(failure(REGISTER_USER_FAILURE));
-                console.log('REGISTER_USER_FAILURE', error);
-            })
+  return dispatch => {
+    dispatch(request(REGISTER_USER_REQUEST));
+
+    return userService.register(user)
+    .then((data) => {
+          dispatch(success(REGISTER_USER_SUCCESS));
+
+          router.goToLoginPage();
+        }).catch((error) => {
+            dispatch(failure(REGISTER_USER_FAILURE));
+            console.log('REGISTER_USER_FAILURE', error);
+        })
   } 
 }
 
