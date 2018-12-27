@@ -1,4 +1,4 @@
-//import router from 'helpers/router-helper'
+import router from 'helpers/router-helper'
 import userService from 'services/users-service'
 
 // ------------------------------------
@@ -66,7 +66,7 @@ export function insertUser(user) {
     .then((data) => {
           dispatch(success(REGISTER_USER_SUCCESS));
 
-          router.goToStudentsPage();
+          router.goToLoginPage();
         }).catch((error) => {
             dispatch(failure(REGISTER_USER_FAILURE));
             console.log('REGISTER_USER_FAILURE', error);
