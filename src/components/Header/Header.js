@@ -11,7 +11,7 @@ import Login from '../../routes/Login'
 
 import StundentList from '../../routes/Student/StudentList'
 import SchoolList from '../../routes/School/SchoolList'
-import GroupList from '../../routes/Group/GroupList'
+//import GroupList from '../../routes/Group/GroupList'
 import UserRegister from '../../routes/User/UserRegister'
 
 const dictAll = {
@@ -56,7 +56,7 @@ export const Header = (props, user) => {
                   ] : [
                     <li className={'nav-item ' + classActive[StundentList.pathWithoutParam]} key="alunos"><Link to={StundentList.pathWithoutParam}>Alunos</Link></li>,
                     <li className={'nav-item ' + classActive[SchoolList.pathWithoutParam]} key="escolas"><Link to={SchoolList.pathWithoutParam}>Escolas</Link></li>,
-                    <li className={'nav-item ' + classActive[GroupList.pathWithoutParam]} key="grupos"><Link to={GroupList.pathWithoutParam}>Grupos</Link></li>
+                    //<li className={'nav-item ' + classActive[GroupList.pathWithoutParam]} key="grupos"><Link to={GroupList.pathWithoutParam}>Grupos</Link></li>
                   ]
               }
             </ul>
