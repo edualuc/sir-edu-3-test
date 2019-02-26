@@ -1,4 +1,4 @@
-import ImgLogo from '../public/sir-edu_logo.png'
+import ImgLogo from '../public/SIGAEDU.png'
 import ImgDefaultAvatar from '../public/default-avatar.png'
 
 export const BASE_URL = '/api'
