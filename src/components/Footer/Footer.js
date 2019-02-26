@@ -1,7 +1,6 @@
 import React, { PropTypes } from 'react'
 import { Link } from 'react-router'
 import './Footer.scss'
-import { logo } from '../../constants/configConstants'
 
 import Paginas from '../../routes/Pages'
 
@@ -15,7 +14,6 @@ const Footer = (pros) => {
     return (
         <div className="container-fluid footer">
             <div className="navbar-brand navbar-footer ml-3 ml-md-1">
-                <img id="logo-footer" src={logo} />
                 SiG@Edu - Sistema de Gestão e Acompanhamento Educacional - 2018
             </div>
             <div className="navbar-inner navbar-right" id="navbarMenuFooter">

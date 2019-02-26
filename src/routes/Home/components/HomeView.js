@@ -1,6 +1,6 @@
 import React from 'react'
-import logo from 'public/SIGAEDU.png'
 import './HomeView.scss'
+import { logo } from '../../../constants/configConstants'
 
 export const HomeView = () => (
   <div className="sir-home text-center">
